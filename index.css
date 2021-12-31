@@ -15,7 +15,8 @@ min-height: 100vh;
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
-background: url(assets/bg.png)no-repeat;
+/* background: url(assets/bg2.png)no-repeat; */
+background-color: black;
 background-size: cover;
 background-position: center;
 }
@@ -33,16 +34,16 @@ align-items: center;
 header .logo{
 position: relative;
 letter-spacing: 1px;
-width: 120px;
-height: 120px;
+width: 180px;
+height: 200px;
 }
 
 header .navigation a{
-color: #000;
+color: white;
 text-decoration: none;
 font-weight: 500;
 letter-spacing: 1px;
-padding: 2px 15px;
+padding: 5px 15px;
 border-radius: 20px;
 transition: 0.3s;
 transition-property: background;
@@ -53,7 +54,8 @@ margin-right: 30px;
 }
 
 header .navigation a:hover{
-background: black;
+background: #bbff00;
+color: black;
 }
 
 .content{
@@ -62,7 +64,7 @@ margin: 60px 100px;
 }
 
 .content .info h2{
-color: #001d3d;
+color: #bbff00;
 font-size: 55px;
 text-transform: uppercase;
 font-weight: 800;
@@ -72,7 +74,7 @@ margin-bottom: 30px;
 }
 
 .content .info h2 span{
-color: black;
+color: white;
 font-size: 50px;
 font-weight: 600;
 }
@@ -81,11 +83,12 @@ font-weight: 600;
 font-size: 16px;
 font-weight: 500;
 margin-bottom: 40px;
+color: white;
 }
 
 .content .info-btn{
-color: #fff;
-background: #001d3d;
+color: black;
+background: #bbff00;
 text-decoration: none;
 text-transform: uppercase;
 font-weight: 500;
@@ -97,7 +100,7 @@ transition-property: background;
 }
 
 .content .info-btn:hover{
-background: #0C4F60;
+background: white;
 }
 
 .media-icons{
@@ -109,7 +112,7 @@ margin: auto;
 
 .media-icons a{
 position: relative;
-color: #111;
+color: #bbff00;
 font-size: 25px;
 transition: 0.3s;
 transition-property: transform;
@@ -132,19 +135,34 @@ z-index: 3;
 display: none;
 }
 
-.logo-image{
-    width: 120px;
-    height: 120px;
+/* .logo-image{
+    width: 140px;
+    height: 200px;
     border-radius: 50%;
     overflow: hidden;
     margin-top: -6px;
-}
+} */
 
 .transimg{
     width: 800px;
     height: 700px;
     margin-left: 200px;
 }
+
+.fun{
+    width: 500px;
+    height: 550px;
+    float:right;
+    top: -100px;
+}
+
+/* 
+.funcontain{
+    width: 100%;
+    margin: 30px 30px 30px 0;
+    float: right;
+} */
+
 
 /* Responsive styles */
 
@@ -238,19 +256,6 @@ font-weight: 600;
 .content .info p{
 font-size: 14px;
 }
-
-section{
-    position: relative;
-    width: 100%;
-    display: flex;
-    left: -50px;
-    margin: 20px 20px 20px 20px;
-    flex-direction: column;
-    justify-content: flex-start;
-    background: url(assets/bg.png)no-repeat;
-    background-size: cover;
-    background-position: center;
-    }
 
 }
 
