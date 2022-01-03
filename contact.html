@@ -11,25 +11,86 @@
 </head>
 <body>
         <section>
-        <header>
-            <h2><a href="#">
-                    <img class="logo" src="assets/logo2.png" class="img-fluid">
-                </a>
-            </h2>
-            <div class="navigation">
-            <a href="index.html">Home</a>
-            <a href="#">About</a>
-            <a href="#">Clients</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
+            <div class="navigation-bar-container">
+                <div class="nav-container">
+        
+                    <div class="logo-container">
+                        <img class="logo" src="assets/logo2.png">
+                    </div> 
+        
+                    <div class="navbar1">
+                        <div class="nav-mobile">
+                            <a href="#" id="nav-toggle"><span></span></a>
+                        </div>
+                        <ul class="nav-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About</a></li>
+        
+                            <li><a href="#">Services</a></li>
+    
+        
+                            <li><a href="#">Clients</a>
+                            </li>
+    
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+        
+                </div>
+            </div> 
+        </section>
+        
+    </br>
+        <h1 class='contact'>Contact</h1>
+
+        <form
+    action="https://formspree.io/f/mlezdlpy"
+    method="POST"
+    >
+        <form class="row g-3">
+            <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
             </div>
-        </header>
-            <br/>
-            <div class="contact-content">
-                <div class="contact-info">
-                <h2>Contact</h2>
+            <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+            <label for="inputAddress2" class="form-label">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+            <label for="inputCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+            <label for="inputState" class="form-label">State</label>
+            <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>...</option>
+            </select>
+            </div>
+            <div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                Check me out
+                </label>
             </div>
             </div>
-    </section>
+            </div>
+
+    <button class='info-btn' type="submit">Send</button>
+    </form>
+
 </body>
 </html>
